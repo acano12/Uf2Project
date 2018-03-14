@@ -11,7 +11,7 @@ public class Main {
 
         Habitacion suite = new Habitacion();
 
-        //HABITACION-INDIVIDUAL
+        //HABITACION-INDIVIDUAL-
         habitacionIndividual.camasIndividuales = true;
 
     }
