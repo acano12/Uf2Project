@@ -6,5 +6,5 @@ public class Reservas {
     int idCliente;
     int fechaEntrada;
     int fechaSalida;
-
+    int precio;
 }
