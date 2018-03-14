@@ -8,4 +8,14 @@ public class Habitacion {
     boolean baño;
 
     //metodos
+
+    class numHabitacion extends Ocupacion{
+
+
+    }
+
+    class numInquilino extends Ocupacion{
+
+
+    }
 }

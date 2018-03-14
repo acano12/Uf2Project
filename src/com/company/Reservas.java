@@ -7,6 +7,4 @@ public class Reservas {
     int fechaEntrada;
     int fechaSalida;
 
-
-
 }
