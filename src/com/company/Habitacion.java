@@ -16,4 +16,14 @@ public class Habitacion {
     boolean terraza;
     boolean secadorPelo;
     //metodos
+
+    class numHabitacion extends Ocupacion{
+
+
+    }
+
+    class numInquilino extends Ocupacion{
+
+
+    }
 }
