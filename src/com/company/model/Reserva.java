@@ -1,6 +1,6 @@
-package com.company;
+package com.company.model;
 
-public class Reservas {
+public class Reserva {
     int idReserva;
     int idHabitacion;
     int idCliente;
