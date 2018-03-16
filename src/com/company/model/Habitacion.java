@@ -10,14 +10,13 @@ public class Habitacion {
     public boolean bañoPublico;
     public boolean aparcamiento;
     public boolean wifi;
-    public boolean libre;
 
     //metodos
-
         public void asignarNumerodeCamasIndividuales( int numeroCamas){
             camasIndividuales = numeroCamas;
-
         }
-
+         public void asignarNumerodeCamasDobles( int numeroCamas){
+            camasDobles = numeroCamas;
+         }
 
     }
