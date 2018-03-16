@@ -5,7 +5,6 @@ import com.company.model.Habitacion;
 public class Main {
 
     public static void main(String[] args) {
-        Habitacion habitacionIndividual = new Habitacion();
 
         Habitacion habitacionDoble = new Habitacion();
 
@@ -14,15 +13,17 @@ public class Main {
         Habitacion suite = new Habitacion();
 
         //HABITACION-INDIVIDUAL//
-        Habitacion blue = new Habitacion();
-        blue.camasIndividuales = 1;
-        blue.vistas=true;
-        blue.bañoPublico=true;
 
-        Habitacion redLava = new Habitacion();
-        redLava.camasIndividuales = 2;
-        redLava.vistas=true;
-        redLava.bañoPrivado=true;
-        redLava.wifi=true;
+        Habitacion habitacionIndividual_Blue = new Habitacion();
+        habitacionIndividual_Blue.asignarNumerodeCamasIndividuales(3);
+        habitacionIndividual_Blue.vistas=true;
+        habitacionIndividual_Blue.bañoPublico=true;
+
+        Habitacion habitacionIndividual_RedLava = new Habitacion();
+        habitacionIndividual_RedLava.asignarNumerodeCamasIndividuales(2);
+        habitacionIndividual_RedLava.vistas=true;
+        habitacionIndividual_RedLava.bañoPrivado=true;
+        habitacionIndividual_RedLava.wifi=true;
+
     }
 }
