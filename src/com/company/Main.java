@@ -1,6 +1,6 @@
-package com.company;
+package com.company.model;
 
-import com.company.model.Habitacion;
+import com.company.Habitacion;
 
 public class Main {
 

@@ -1,10 +1,10 @@
-package com.company.model;
+package com.company;
 
 public class Reserva {
-    int idReserva;
-    int idHabitacion;
-    int idCliente;
-    int fechaEntrada;
-    int fechaSalida;
-    int precio;
+    public int idReserva;
+    public int idHabitacion;
+    public int idCliente;
+    public String fechaEntrada;
+    public String fechaSalida;
+    public double precio;
 }
