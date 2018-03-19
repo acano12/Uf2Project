@@ -1,29 +1,36 @@
-package com.company.model;
 
-import com.company.Habitacion;
+package com.company;
+
+import com.company.view.PantallaClientes;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Habitacion habitacionDoble = new Habitacion();
+        //CLIENTES
+        PantallaClientes pantallaClientes = new PantallaClientes();
+        pantallaClientes.mostrar();
 
-        Habitacion habitacionExecutive = new Habitacion();
+//        Habitacion habitacionDoble = new Habitacion();
+//
+//        Habitacion habitacionExecutive = new Habitacion();
+//
+//        Habitacion suite = new Habitacion();
+//
+//        //HABITACION-INDIVIDUAL//
+//
+//        Habitacion habitacionIndividual_Blue = new Habitacion();
+//        habitacionIndividual_Blue.asignarNumerodeCamasIndividuales(3);
+//        habitacionIndividual_Blue.vistas=true;
+//        habitacionIndividual_Blue.bañoPublico=true;
+//
+//        Habitacion habitacionIndividual_RedLava = new Habitacion();
+//        habitacionIndividual_RedLava.asignarNumerodeCamasIndividuales(2);
+//        habitacionIndividual_RedLava.vistas=true;
+//        habitacionIndividual_RedLava.bañoPrivado=true;
+//        habitacionIndividual_RedLava.wifi=true;
 
-        Habitacion suite = new Habitacion();
 
-        //HABITACION-INDIVIDUAL//
-
-        Habitacion habitacionIndividual_Blue = new Habitacion();
-        habitacionIndividual_Blue.asignarNumerodeCamasIndividuales(3);
-        habitacionIndividual_Blue.vistas=true;
-        habitacionIndividual_Blue.bañoPublico=true;
-
-        Habitacion habitacionIndividual_RedLava = new Habitacion();
-        habitacionIndividual_RedLava.asignarNumerodeCamasIndividuales(2);
-        habitacionIndividual_RedLava.vistas=true;
-        habitacionIndividual_RedLava.bañoPrivado=true;
-        habitacionIndividual_RedLava.wifi=true;
 
     }
 }
