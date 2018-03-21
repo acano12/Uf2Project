@@ -25,14 +25,7 @@ public class PantallaClientes {
         int MesNacimiento = scanner.nextInt();
         System.out.println("Año de nacimiento:");
         int AñoNacimiento = scanner.nextInt();
-//        System.out.println();
-//        System.out.println("------------------------------------");
-//        System.out.println("FICHA DEL CLIENTE");
-//        System.out.println("------------------------------------");
-//        System.out.println("NOMBRE: "+ nombre);
-//        System.out.println("APELLIDO: "+ apellido);
-//        System.out.println("Fecha de nacimiento: " + DiaNacimiento + "/" + MesNacimiento + "/"+ AñoNacimiento);
-//        System.out.println("-------------------------------------");
+        System.out.println("Se ha generado tu ID de CLIENTE.");
 
     }
 
