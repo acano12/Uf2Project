@@ -11,10 +11,8 @@ public class Main {
 
         //CLIENTES
         ManagerClientes managerClientes = new ManagerClientes();
-
         PantallaClientes pantallaClientes = new PantallaClientes();
         pantallaClientes.mostrar(managerClientes);
-
         PantallaListarClientes pantallaListarClientes = new PantallaListarClientes();
         pantallaListarClientes.listar(managerClientes);
 ////        Habitacion habitacionDoble = new Habitacion();
