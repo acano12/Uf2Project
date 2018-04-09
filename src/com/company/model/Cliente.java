@@ -6,11 +6,11 @@ public class Cliente {
 
     public String username;
     public String password;
+    public String nombre;
     public String apellido;
     public int DiaNacimiento;
     public int MesNacimiento;
     public int AñoNacimiento;
-
 
 
 }
