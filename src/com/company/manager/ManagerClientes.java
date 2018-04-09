@@ -18,7 +18,6 @@ public class ManagerClientes {
             }
         }
     }
-
     public String verificar(String nombre, String pass){
         for (int i = 0; i < usuarios.length; i++) {
             if(usuarios[i] != null && nombre.equals(usuarios[i].username) && pass.equals(usuarios[i].password)){
