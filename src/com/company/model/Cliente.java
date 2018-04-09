@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Cliente {
 
-    public int idCliente;
-    public String nombre;
+    public String username;
+    public String password;
     public String apellido;
     public int DiaNacimiento;
     public int MesNacimiento;

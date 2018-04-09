@@ -1,38 +1,32 @@
 package com.company.manager;
 
 import com.company.model.Cliente;
-import com.company.view.PantallaClientes;
-
-import java.util.Scanner;
 
 public class ManagerClientes {
+    Cliente[] usuarios = new Cliente[4];
 
-    Cliente cliente;
-    Cliente[] clientes =new Cliente[100];
+    public void crearCliente(String nombre, String contraseña){
 
-    public void crear(String nombre,String apellido, int DiaNacimiento,int MesNacimiento, int AñoNacimiento, int idCliente){
-        for (int i = 0; i <clientes.length ; i++) {
-            if (clientes[i] ==null){
-                clientes[i] = new Cliente();
+        Cliente usuario = new Cliente();
+        usuario.username = nombre;
+        usuario.password = contraseña;
 
-                clientes[i] = new Cliente();
-
-                clientes[i].nombre = nombre;
-                clientes[i].apellido = apellido;
-                clientes[i].DiaNacimiento = DiaNacimiento;
-                clientes[i].MesNacimiento = MesNacimiento;
-                clientes[i].AñoNacimiento = AñoNacimiento;
-                clientes[i].idCliente = idCliente;
-                idCliente = (int) (Math.random() * 976) + 1;
+        for (int i = 0; i < usuarios.length; i++) {
+            if(usuarios[i] == null){
+                usuarios[i] = usuario;
+                break;
             }
         }
-
     }
 
+    public String verificar(String nombre, String pass){
+        for (int i = 0; i < usuarios.length; i++) {
+            if(usuarios[i] != null && nombre.equals(usuarios[i].username) && pass.equals(usuarios[i].password)){
+                return "ok";
+            }
+        }
+        return "nok";
 
-    public Cliente consultar(){
-        return cliente;
     }
-
-
 }
+

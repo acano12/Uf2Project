@@ -5,18 +5,19 @@ import com.company.model.Cliente;
 
 import java.util.Scanner;
 
-public class PantallaClientes {
+public class PantallaRegistroClientes {
 
-    public void mostrar(ManagerClientes managerClientes){
+    public void iniciar(ManagerClientes managerClientes){
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("----------------------");
-        System.out.println("      CLIENTE         ");
+        System.out.println("\033[104;97REGISTRO :: CLIENTES\033[0m");
         System.out.println("----------------------");
-        System.out.println("INTRODUCE TU NOMBRE   ");
-        String nombre = scanner.nextLine();
-        System.out.println("INTRODUCE TUS APELLIDOS ");
-        String apellido = scanner.nextLine();
+        System.out.println("NOMBRE DE USUARIO   ");
+        String username = scanner.nextLine();
+        System.out.println("CONTRASEÑA  ");
+        String password =scanner.nextLine();
+
         System.out.println("FECHA DE NACIMIENTO");
         System.out.println("----------------------");
         System.out.println("Dia de nacimiento:");
@@ -25,8 +26,6 @@ public class PantallaClientes {
         int MesNacimiento = scanner.nextInt();
         System.out.println("Año de nacimiento:");
         int AñoNacimiento = scanner.nextInt();
-        System.out.println("Se ha generado tu ID de CLIENTE.");
-
     }
 
 }
