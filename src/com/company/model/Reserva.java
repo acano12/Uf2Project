@@ -10,5 +10,4 @@ public class Reserva {
     public int mesActual = ldt.getMonthValue();
     public int añoActual = ldt.getYear();
 
-
 }
