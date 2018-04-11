@@ -1,11 +1,12 @@
 package com.company.view;
 
 import com.company.manager.ManagerClientes;
+import com.company.manager.ManagerReserva;
 
 import java.util.Scanner;
 
 public class PantallaAcceder {
-    public void iniciar(ManagerClientes managerClientes){
+    public void iniciar(ManagerClientes managerClientes, ManagerReserva managerReserva){
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("\033[104;97mMyApp :: Acceder\033[0m");
@@ -21,11 +22,11 @@ public class PantallaAcceder {
 
         if(resultado.equals("ok")){
             PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
-            pantallaPrincipal.iniciar();
+            pantallaPrincipal.iniciar(managerReserva, managerClientes);
         }
         if(resultado.equals("nok")){
             PantallaMenuPrincipal pantallaMenuPrincipal = new PantallaMenuPrincipal();
-            pantallaMenuPrincipal.iniciar(managerClientes);
+            pantallaMenuPrincipal.iniciar(managerClientes, managerReserva);
         }
     }
 }

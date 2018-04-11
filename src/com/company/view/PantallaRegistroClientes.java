@@ -26,6 +26,6 @@ public class PantallaRegistroClientes {
         int MesNacimiento = scanner.nextInt();
         System.out.println("Año de nacimiento:");
         int AñoNacimiento = scanner.nextInt();
-    fgffff}
+    }
 
 }
