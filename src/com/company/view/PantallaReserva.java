@@ -1,23 +1,37 @@
 package com.company.view;
 
+import com.company.manager.ManagerClientes;
+import com.company.manager.ManagerHabitacion;
 import com.company.manager.ManagerOcupacion;
 import com.company.manager.ManagerReserva;
 
 import java.util.Scanner;
 
+
+
 public class PantallaReserva {
-    public void reservar(ManagerReserva managerReserva) {
+
+    public void reservar() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Dia");
-        int dia = scanner.nextInt();
-        System.out.println("mes");
-        int mes = scanner.nextInt();
         System.out.println("año");
         int any = scanner.nextInt();
 
-//        ManagerReserva managerReserva = new ManagerReserva();
-//        managerReserva.comprobar(managerReserva);
+        System.out.println("mes");
+        int mes = scanner.nextInt();
 
+        System.out.println("Dia");
+        int dia = scanner.nextInt();
+        ManagerReserva managerReserva = new ManagerReserva();
+        managerReserva.comprobar(any, dia, mes);
+
+        // ManagerReserva.getHabitacionesLibres(any, dia, mes);
+
+        int validar = ManagerReserva.comprobar(any, mes, dia);
+
+
+        if (validar == 1) {
+            PantallaReserva pantallaReserva = new PantallaReserva();
+            pantallaReserva.reservar();
+        }
     }
-
     }

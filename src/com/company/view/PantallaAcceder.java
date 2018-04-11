@@ -6,7 +6,7 @@ import com.company.manager.ManagerReserva;
 import java.util.Scanner;
 
 public class PantallaAcceder {
-    public void iniciar(ManagerClientes managerClientes, ManagerReserva managerReserva){
+    public void iniciar(){
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("\033[104;97mMyApp :: Acceder\033[0m");
@@ -18,15 +18,15 @@ public class PantallaAcceder {
         String password = scanner.nextLine();
 
 
-        String resultado = managerClientes.verificar(usuario, password);
+        String resultado = ManagerClientes.verificar(usuario, password);
 
         if(resultado.equals("ok")){
             PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
-            pantallaPrincipal.iniciar(managerReserva, managerClientes);
+            pantallaPrincipal.iniciar();
         }
         if(resultado.equals("nok")){
             PantallaMenuPrincipal pantallaMenuPrincipal = new PantallaMenuPrincipal();
-            pantallaMenuPrincipal.iniciar(managerClientes, managerReserva);
+            pantallaMenuPrincipal.iniciar();
         }
     }
 }

@@ -6,8 +6,8 @@ import java.time.ZoneId;
 
 public class Reserva {
     LocalDateTime ldt = LocalDateTime.ofInstant(Instant.now(), ZoneId.systemDefault());
-    public int diaActual = ldt.getDayOfMonth();
-    public int mesActual = ldt.getMonthValue();
-    public int añoActual = ldt.getYear();
+    public int año = ldt.getYear();
+    public int mes = ldt.getMonthValue();
+    public int dia = ldt.getDayOfMonth();
 
 }

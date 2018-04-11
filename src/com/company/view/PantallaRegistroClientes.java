@@ -1,13 +1,14 @@
 package com.company.view;
 
 import com.company.manager.ManagerClientes;
+import com.company.manager.ManagerReserva;
 import com.company.model.Cliente;
 
 import java.util.Scanner;
 
 public class PantallaRegistroClientes {
 
-    public void iniciar(ManagerClientes managerClientes){
+    public void iniciar(){
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("----------------------");
