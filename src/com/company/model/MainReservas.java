@@ -6,11 +6,11 @@ public class MainReservas {
     public static void main(String[] args) {
         Reserva reserva = new Reserva();
 
-        reserva.idReserva = 97492;
-        reserva.idCliente = 100;
-        reserva.idHabitacion = 98298;
-        reserva.fechaEntrada = "23/3/2002";
-        reserva.fechaSalida = "7/7/77";
+        reserva.idReserva = 3;
+        reserva.idCliente = 3;
+        reserva.idHabitacion = 13;
+        reserva.fechaEntrada = "23/06/2018";
+        reserva.fechaSalida = "29/06/2018";
 
 
     }

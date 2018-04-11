@@ -9,7 +9,7 @@ public class PantallaAcceder {
     public void iniciar(ManagerClientes managerClientes, ManagerReserva managerReserva){
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("\033[104;97mMyApp :: Acceder\033[0m");
+        System.out.println("\033[104;97mPENSION SAN JUSTO :: Acceder\033[0m");
 
         System.out.println("Usuario:");
         String usuario = scanner.nextLine();
