@@ -30,8 +30,14 @@ public class PantallaReserva {
 
 
         if (validar == 1) {
+            System.out.println("MAAL RESERVA NO HECHA");
+
             PantallaReserva pantallaReserva = new PantallaReserva();
             pantallaReserva.reservar();
+            System.out.println(" ");
         }
+        System.out.println("BIEEN RESERVA HECHA");
+
+
     }
     }

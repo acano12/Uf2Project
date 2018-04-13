@@ -3,6 +3,7 @@ package com.company.view;
 import com.company.manager.ManagerClientes;
 import com.company.manager.ManagerReserva;
 import com.company.model.Cliente;
+import com.company.view.PantallaMenuPrincipal;
 
 import java.util.Scanner;
 
@@ -27,6 +28,13 @@ public class PantallaRegistroClientes {
         int MesNacimiento = scanner.nextInt();
         System.out.println("Año de nacimiento:");
         int AñoNacimiento = scanner.nextInt();
+
+        ManagerClientes.crearCliente(username, password, DiaNacimiento, MesNacimiento, AñoNacimiento);
+
+        PantallaMenuPrincipal pantallaMenuPrincipal = new PantallaMenuPrincipal();
+        pantallaMenuPrincipal.iniciar();
     }
+
+
 
 }
