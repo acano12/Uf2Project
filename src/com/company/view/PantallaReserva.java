@@ -15,8 +15,8 @@ public class PantallaReserva {
         System.out.println("año");
         int any = scanner.nextInt();
 
-//        ManagerReserva managerReserva = new ManagerReserva();
-//        managerReserva.comprobar(managerReserva);
+//       ManagerReserva managerReserva = new ManagerReserva();
+//       managerReserva.comprobar(managerReserva);
 
     }
 
