@@ -16,7 +16,6 @@ public class PantallaHabitacion {
         System.out.println("d) Salir");
         String elegir = scanner.nextLine();
 
-
         if("a".equals(elegir)){
         PantallaHabitacionIndividual pantallaHabitacionIndividual = new PantallaHabitacionIndividual();
 
