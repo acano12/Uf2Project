@@ -1,10 +1,13 @@
 package com.company.model;
 
+import java.time.Instant;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+
 public class Reserva {
-    public int idReserva;
-    public int idHabitacion;
-    public int idCliente;
-    public String fechaEntrada;
-    public String fechaSalida;
-    public double precio;
+    LocalDateTime ldt = LocalDateTime.ofInstant(Instant.now(), ZoneId.systemDefault());
+    public int diaActual = ldt.getDayOfMonth();
+    public int mesActual = ldt.getMonthValue();
+    public int añoActual = ldt.getYear();
+
 }
