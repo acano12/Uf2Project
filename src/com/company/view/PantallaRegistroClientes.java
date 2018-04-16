@@ -13,7 +13,7 @@ public class PantallaRegistroClientes {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("----------------------");
-        System.out.println("\033[104;97REGISTRO :: CLIENTES\033[0m");
+        System.out.println("\033[104;97mREGISTRO :: CLIENTES\033[0m");
         System.out.println("----------------------");
         System.out.println("NOMBRE DE USUARIO   ");
         String username = scanner.nextLine();
