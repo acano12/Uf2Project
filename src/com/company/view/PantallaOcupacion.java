@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class PantallaOcupacion {
     Scanner scanner = new Scanner(System.in);
 
-    public void vista(ManagerOcupacion managerOcupacion){
+    public void vista(){
 
         System.out.println("Dia");
         int dia = scanner.nextInt();
