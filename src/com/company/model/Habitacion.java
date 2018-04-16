@@ -1,7 +1,7 @@
 package com.company.model;
 
 public class Habitacion {
-        //campos
+    //campos
 
     public int camasIndividuales;
     public  int camasDobles;
@@ -12,11 +12,11 @@ public class Habitacion {
     public boolean wifi;
 
     //metodos
-        public void asignarNumerodeCamasIndividuales( int numeroCamas){
-            camasIndividuales = numeroCamas;
-        }
-         public void asignarNumerodeCamasDobles( int numeroCamas){
-            camasDobles = numeroCamas;
-         }
-
+    public void asignarNumerodeCamasIndividuales( int numeroCamas){
+        camasIndividuales = numeroCamas;
     }
+    public void asignarNumerodeCamasDobles( int numeroCamas){
+        camasDobles = numeroCamas;
+    }
+
+}

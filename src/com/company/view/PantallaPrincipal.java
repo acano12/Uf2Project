@@ -6,7 +6,7 @@ import com.company.manager.ManagerReserva;
 import java.util.Scanner;
 
 public class PantallaPrincipal {
-    public void iniciar(ManagerReserva managerReserva, ManagerClientes managerClientes){
+    public void iniciar(){
         System.out.println("\033[104;97mPENSIÓN SAN JUSTO :: Principal\033[0m");
         System.out.println("a) Reservar");
         System.out.println("b) Atrás");
@@ -16,11 +16,11 @@ public class PantallaPrincipal {
 
         if("a".equals(opcion)){
             PantallaReserva pantallaReserva = new PantallaReserva();
-            pantallaReserva.reservar(managerReserva);
+            pantallaReserva.reservar();
         }
         else if("b".equals(opcion)){
             PantallaMenuPrincipal pantallaMenuPrincipal = new PantallaMenuPrincipal();
-            pantallaMenuPrincipal.iniciar(managerClientes, managerReserva);
+            pantallaMenuPrincipal.iniciar();
         }
 
 
