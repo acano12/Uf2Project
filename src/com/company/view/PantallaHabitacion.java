@@ -20,9 +20,10 @@ public class PantallaHabitacion {
         PantallaHabitacionIndividual pantallaHabitacionIndividual = new PantallaHabitacionIndividual();
 
         } else if("b".equals(elegir)){
-
-
-        } else if("c".equals(elegir)){
+//        PantallaHabitacionDoble pantallaHabitacionDoble = new PantallaHAbitacionDoble;
+//
+//        } else if("c".equals(elegir)){
+//        PantallaHabitacionSuite pantallaHabitacionSuite = new PantallaHabitacionSUite;
 
         }else if ("d".equals(elegir)){
             System.out.println("HASTA LUEGO");
