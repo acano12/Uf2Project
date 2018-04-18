@@ -15,4 +15,5 @@ public class Habitacion {
     public void asignarNumerodeCamasDobles( int numeroCamas){
         camasDobles = numeroCamas;
     }
+
 }
