@@ -5,11 +5,8 @@ public class Habitacion {
 
     public int camasIndividuales;
     public  int camasDobles;
-    public boolean vistas;
-    public boolean bañoPrivado;
-    public boolean bañoPublico;
-    public boolean aparcamiento;
-    public boolean wifi;
+
+
 
     //metodos
     public void asignarNumerodeCamasIndividuales( int numeroCamas){
