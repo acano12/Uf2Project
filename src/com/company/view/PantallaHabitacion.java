@@ -18,12 +18,11 @@ public class PantallaHabitacion {
 
         if("a".equals(elegir)){
         PantallaHabitacionIndividual pantallaHabitacionIndividual = new PantallaHabitacionIndividual();
+            pantallaHabitacionIndividual.elegir();
 
         } else if("b".equals(elegir)){
-//        PantallaHabitacionDoble pantallaHabitacionDoble = new PantallaHAbitacionDoble;
-//
-//        } else if("c".equals(elegir)){
-//        PantallaHabitacionSuite pantallaHabitacionSuite = new PantallaHabitacionSUite;
+
+        } else if("c".equals(elegir)){
 
         }else if ("d".equals(elegir)){
             System.out.println("HASTA LUEGO");

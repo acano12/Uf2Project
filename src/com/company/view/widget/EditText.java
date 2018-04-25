@@ -10,7 +10,12 @@ public class EditText {
 
     public int readInt(String hint){
         System.out.println(hint);
-
         return new Scanner(System.in).nextInt();
+    }
+
+    public String readDate(String hint){
+        System.out.println(hint);
+        return new Scanner(System.in).nextLine();
+
     }
 }

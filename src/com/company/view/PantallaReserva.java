@@ -7,8 +7,6 @@ import com.company.view.widget.Mensaje;
 
 import java.util.Scanner;
 
-
-
 public class PantallaReserva {
 
     public void reservar() {
@@ -16,16 +14,15 @@ public class PantallaReserva {
         Mensaje mensaje = new Mensaje();
         EditText editText = new EditText();
 
-        int any = editText.readInt("AÑO");
-        int mes = editText.readInt("MES");
-        int dia = editText.readInt("DIA");
+        String f1Inicio;
+
 
         ManagerReserva managerReserva = new ManagerReserva();
-        managerReserva.comprobar(any, dia, mes);
-
+//        managerReserva.comprobar(fecha);
+//
         // ManagerReserva.getHabitacionesLibres(any, dia, mes);
 
-        int validar = ManagerReserva.comprobar(any, mes, dia);
+        int validar = ManagerReserva.comprobar(100,1,1);
 
 
         if (validar == 1) {
@@ -36,6 +33,10 @@ public class PantallaReserva {
             System.out.println(" ");
         }
            mensaje.showOk("ENHORABUENA, FECHA ACCESIBLE");
+
+        System.out.println(" ");
+            PantallaHabitacion pantallaHabitacion = new PantallaHabitacion();
+            pantallaHabitacion.habitaciones();
 
 
     }

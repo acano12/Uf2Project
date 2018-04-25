@@ -18,7 +18,7 @@ public class PantallaAcceder {
         String password = scanner.nextLine();
 
 
-        String resultado = ManagerClientes.verificar(usuario, password);
+        String resultado = ManagerClientes.signIn(usuario, password);
 
         if(resultado.equals("ok")){
             PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
