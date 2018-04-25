@@ -14,7 +14,6 @@ public class Main {
 //        ManagerHabitacion.crearHabitacion("");
 //        ManagerHabitacion.crearHabitacion("");
 //        ManagerHabitacion.crearHabitacion("");
-
         PantallaMenuPrincipal pantallaMenuPrincipal = new PantallaMenuPrincipal();
         pantallaMenuPrincipal.iniciar();
 
