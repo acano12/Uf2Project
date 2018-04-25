@@ -1,5 +1,5 @@
 # Created by .ignore support plugin (hsz.mobi)
 /Uf2Project.iml
-.gitignore
-.idea/workspace.xml
-out/
+/.gitignore
+/.idea/workspace.xml
+/out/
