@@ -16,6 +16,8 @@ public class PantallaMenuPrincipal {
         Scanner scanner = new Scanner(System.in);
         String opcion = scanner.nextLine();
 
+       // String opcion = menu.show("regitro", "acced", "salid");
+
         if("a".equals(opcion)){
             PantallaRegistroClientes pantallaRegistro = new PantallaRegistroClientes();
             pantallaRegistro.iniciar();

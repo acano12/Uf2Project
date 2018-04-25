@@ -1,42 +1,42 @@
 package com.company.view;
 
-import com.company.manager.ManagerClientes;
-import com.company.manager.ManagerHabitacion;
-import com.company.manager.ManagerOcupacion;
+
 import com.company.manager.ManagerReserva;
+import com.company.view.widget.EditText;
+import com.company.view.widget.Mensaje;
 
 import java.util.Scanner;
-
-
 
 public class PantallaReserva {
 
     public void reservar() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("año");
-        int any = scanner.nextInt();
+        Mensaje mensaje = new Mensaje();
+        EditText editText = new EditText();
 
-        System.out.println("mes");
-        int mes = scanner.nextInt();
+        String f1Inicio;
 
-        System.out.println("Dia");
-        int dia = scanner.nextInt();
+
         ManagerReserva managerReserva = new ManagerReserva();
-        managerReserva.comprobar(any, dia, mes);
-
+//        managerReserva.comprobar(fecha);
+//
         // ManagerReserva.getHabitacionesLibres(any, dia, mes);
 
-        int validar = ManagerReserva.comprobar(any, mes, dia);
+        int validar = ManagerReserva.comprobar(100,1,1);
 
 
         if (validar == 1) {
-            System.out.println("MAAL RESERVA NO HECHA");
+            mensaje.showError("LO SENTIMOS, RESERVA FECHA NO DISPONIBLE");
 
             PantallaReserva pantallaReserva = new PantallaReserva();
             pantallaReserva.reservar();
             System.out.println(" ");
         }
-        System.out.println("BIEEN RESERVA HECHA");
+           mensaje.showOk("ENHORABUENA, FECHA ACCESIBLE");
+
+        System.out.println(" ");
+            PantallaHabitacion pantallaHabitacion = new PantallaHabitacion();
+            pantallaHabitacion.habitaciones();
 
 
     }

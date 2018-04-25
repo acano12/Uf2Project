@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class PantallaPrincipal {
     public void iniciar(){
-        System.out.println("\033[104;97mPENSIÓN SAN JUSTO :: Principal\033[0m");
+        System.out.println("\033[104;97mPENSIÓN SAN JUSTO :: RESERVAR\033[0m");
         System.out.println("a) Reservar");
         System.out.println("b) Atrás");
 

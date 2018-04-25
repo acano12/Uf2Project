@@ -9,7 +9,7 @@ public class PantallaAcceder {
     public void iniciar(){
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("\033[104;97mMyApp :: Acceder\033[0m");
+        System.out.println("\033[104;97mPENSIÓN SAN JUSTO :: Acceder\033[0m");
 
         System.out.println("Usuario:");
         String usuario = scanner.nextLine();
@@ -18,7 +18,7 @@ public class PantallaAcceder {
         String password = scanner.nextLine();
 
 
-        String resultado = ManagerClientes.verificar(usuario, password);
+        String resultado = ManagerClientes.signIn(usuario, password);
 
         if(resultado.equals("ok")){
             PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
