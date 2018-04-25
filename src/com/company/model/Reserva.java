@@ -9,5 +9,6 @@ public class Reserva {
     public int año = ldt.getYear();
     public int mes = ldt.getMonthValue();
     public int dia = ldt.getDayOfMonth();
-
+    int clientID;
+    int habID;
 }

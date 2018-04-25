@@ -18,9 +18,9 @@ public class PantallaHabitacion {
 
         if("a".equals(elegir)){
         PantallaHabitacionIndividual pantallaHabitacionIndividual = new PantallaHabitacionIndividual();
+            pantallaHabitacionIndividual.elegir();
 
         } else if("b".equals(elegir)){
-
 
         } else if("c".equals(elegir)){
 

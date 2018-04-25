@@ -23,14 +23,9 @@ public class PantallaRegistroClientes {
 
         System.out.println("FECHA DE NACIMIENTO");
         System.out.println("----------------------");
-        System.out.println("Dia de nacimiento:");
-        int DiaNacimiento = scanner.nextInt();
-        System.out.println("Mes de nacimiento:");
-        int MesNacimiento = scanner.nextInt();
-        System.out.println("Año de nacimiento:");
-        int AñoNacimiento = scanner.nextInt();
 
-        ManagerClientes.crearCliente(username, password, DiaNacimiento, MesNacimiento, AñoNacimiento);
+
+        ManagerClientes.crearCliente(username, password);
 
         PantallaMenuPrincipal pantallaMenuPrincipal = new PantallaMenuPrincipal();
         pantallaMenuPrincipal.iniciar();

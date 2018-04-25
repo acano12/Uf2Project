@@ -2,36 +2,49 @@ package com.company.manager;
 
 import com.company.model.Cliente;
 
-public class ManagerClientes {
-    static Cliente[] clientes = new Cliente[4];
+import java.security.PublicKey;
+import java.util.Scanner;
+import java.util.UUID;
 
-    static public void crearCliente(String user, String contraseña, int dia, int mes, int any){
+public class ManagerClientes {
+    Scanner scanner = new Scanner(System.in);
+    static Cliente[] clientes = new Cliente[4];
+    static String clientId;
+
+    static public void crearCliente(String user, String contraseña) {
 
         Cliente cliente = new Cliente();
+        cliente.id = UUID.randomUUID().toString();
         cliente.username = user;
         cliente.password = contraseña;
 //        cliente.nombre = nombre;
 //        cliente.apellido = apellidos;
-        cliente.DiaNacimiento = dia;
-        cliente.MesNacimiento = mes;
-        cliente.AñoNacimiento = any;
+//        cliente.FechaNacimiento = fechaNacimiento;
+
 
         for (int i = 0; i < clientes.length; i++) {
-            if(clientes[i] == null){
+            if (clientes[i] == null) {
                 clientes[i] = cliente;
-
                 break;
             }
         }
     }
 
-    static public String verificar(String nombre, String pass){
-        for (int i = 0; i < clientes.length; i++) {
-            if(clientes[i] != null && nombre.equals(clientes[i].username) && pass.equals(clientes[i].password)){
-                return "ok";
+
+
+
+        static public String signIn (String nombre, String pass){
+            for (int i = 0; i < clientes.length; i++) {
+                if (clientes[i] != null && nombre.equals(clientes[i].username) && pass.equals(clientes[i].password)) {
+                    clientId = clientes[i].id;
+
+                    return "ok";
+                }
             }
+            return "nok";
         }
-        return "nok";
+
+
+
 
     }
-}
