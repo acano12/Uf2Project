@@ -1,7 +1,5 @@
 package com.company;
 
-import com.company.manager.ManagerClientes;
-import com.company.manager.ManagerReserva;
 import com.company.view.PantallaMenuPrincipal;
 
 public class Main {
