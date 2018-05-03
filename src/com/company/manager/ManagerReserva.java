@@ -116,7 +116,6 @@ public class ManagerReserva {
         String any2_junto = any2_1 + any2_2 + any2_3 + any2_4;
         int any2 = Integer.parseInt(any2_junto);
 
-
         // AHORA COMPROVAMOS QUE LA FECHA DE ENTRADA SEA INFERIOR A LA DE SALIDA
         boolean esValido = false;
         while (!esValido) {
