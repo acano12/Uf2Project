@@ -18,6 +18,7 @@ public class PantallaReserva {
         managerReserva.fecha1(fecha1);
         String fecha2 = editText.read("Escoja fecha de salida");
         managerReserva.fecha2(fecha2);
+        managerReserva.fechas(fecha1, fecha2);
 
     }
 }
