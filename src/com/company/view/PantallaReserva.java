@@ -12,13 +12,17 @@ public class PantallaReserva {
     public void reservar() {
         Scanner scanner = new Scanner(System.in);
         Mensaje mensaje = new Mensaje();
+        String fecha2 = "";
         EditText editText = new EditText();
         String fecha1 = editText.read("Escoja fecha de entrada");
         ManagerReserva managerReserva = new ManagerReserva();
         managerReserva.fecha1(fecha1);
-        String fecha2 = editText.read("Escoja fecha de salida");
+        managerReserva.fechaAtual(fecha1);
+        fecha2 = editText.read("Escoja fecha de salida");
         managerReserva.fecha2(fecha2);
         managerReserva.fechas(fecha1, fecha2);
+        PantallaHabitacion pantallaHabitacion = new PantallaHabitacion();
+        pantallaHabitacion.habitaciones();
 
     }
 }
