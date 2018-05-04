@@ -92,7 +92,7 @@ public class Utils {
 
         int dias = (int) DAYS.between(localDate1, localDate2);
 
-        int totalDias = dias -1;
+        int totalDias = dias;
         return totalDias;
     }
 
