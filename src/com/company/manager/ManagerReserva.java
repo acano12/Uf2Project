@@ -1,5 +1,6 @@
 package com.company.manager;
 
+import com.company.utils.Utils;
 import com.company.view.PantallaMenuPrincipal;
 import com.company.view.PantallaReserva;
 
@@ -172,8 +173,7 @@ public class ManagerReserva {
         }
     }
 
-    static public void fechas(String fecha1, String fecha2) {
-
+    static public void comprobarDisponibilidad(String fecha1, String fecha2) {
 
         //CON ESTO SACAMOS EL DIA DE ENTRADA
         String dia1_1 = String.valueOf(fecha1.charAt(0));
@@ -215,10 +215,10 @@ public class ManagerReserva {
         String mes2_junto = mes2_1 + mes2_2;
         int mes2 = Integer.parseInt(mes2_junto);
         if (mes2 < 1 || mes2 > 12){
-                System.out.println("Mes no valido, recuerde que los meses van del 1 al 12");
-                PantallaReserva pantallaReserva = new PantallaReserva();
-                pantallaReserva.reservar();
-            }
+            System.out.println("Mes no valido, recuerde que los meses van del 1 al 12");
+            PantallaReserva pantallaReserva = new PantallaReserva();
+            pantallaReserva.reservar();
+        }
 
         //CON ESTO SACAMO EL AÑO DE SALIDA
         String any2_1 = String.valueOf(fecha2.charAt(6));
@@ -286,7 +286,7 @@ public class ManagerReserva {
         break;
             }
 
-
         }
+
     }
 

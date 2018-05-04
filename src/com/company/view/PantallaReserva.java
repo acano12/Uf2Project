@@ -2,6 +2,7 @@ package com.company.view;
 
 
 import com.company.manager.ManagerReserva;
+import com.company.utils.Utils;
 import com.company.view.widget.EditText;
 import com.company.view.widget.Mensaje;
 
@@ -15,14 +16,16 @@ public class PantallaReserva {
         String fecha2 = "";
         EditText editText = new EditText();
         String fecha1 = editText.read("Escoja fecha de entrada");
+
         ManagerReserva managerReserva = new ManagerReserva();
         managerReserva.fecha1(fecha1);
         managerReserva.fechaAtual(fecha1);
         fecha2 = editText.read("Escoja fecha de salida");
         managerReserva.fecha2(fecha2);
-        managerReserva.fechas(fecha1, fecha2);
-        PantallaHabitacion pantallaHabitacion = new PantallaHabitacion();
-        pantallaHabitacion.habitaciones();
+        managerReserva.comprobarDisponibilidad(fecha1, fecha2);
+        int totalDias = Utils.Comprobarfechas(fecha1, fecha2);
+                PantallaHabitacion pantallaHabitacion = new PantallaHabitacion();
+        pantallaHabitacion.habitaciones(totalDias);
 
     }
 }

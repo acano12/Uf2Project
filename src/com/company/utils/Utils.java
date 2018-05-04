@@ -1,5 +1,7 @@
 package com.company.utils;
 
+import com.company.view.PantallaReserva;
+
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
@@ -21,6 +23,81 @@ public class Utils {
     }
 
 
+    public static int Comprobarfechas(String fecha1, String fecha2) {
+
+
+            //CON ESTO SACAMOS EL DIA DE ENTRADA
+            String dia1_1 = String.valueOf(fecha1.charAt(0));
+            String dia1_2 = String.valueOf(fecha1.charAt(1));
+            String dia1_junto = dia1_1 + dia1_2;
+            int dia1 = Integer.parseInt(dia1_junto);
+
+
+            //CON ESTO SACAMO EL MES DE ENTRADA
+            String mes1_1 = String.valueOf(fecha1.charAt(3));
+            String mes1_2 = String.valueOf(fecha1.charAt(4));
+            String mes1_junto = mes1_1 + mes1_2;
+            int mes1 = Integer.parseInt(mes1_junto);
+
+
+            //CON ESTO SACAMO EL AÑO DE ENTRADA
+            String any1_1 = String.valueOf(fecha1.charAt(6));
+            String any1_2 = String.valueOf(fecha1.charAt(7));
+            String any1_3 = String.valueOf(fecha1.charAt(8));
+            String any1_4 = String.valueOf(fecha1.charAt(9));
+            String any1_junto = any1_1 + any1_2 + any1_3 + any1_4;
+            int any1 = Integer.parseInt(any1_junto);
+
+
+            //CON ESTO SACAMOS EL DIA DE SALIDA
+            String dia2_1 = String.valueOf(fecha2.charAt(0));
+            String dia2_2 = String.valueOf(fecha2.charAt(1));
+            String dia2_junto = dia2_1 + dia2_2;
+            int dia2 = Integer.parseInt(dia2_junto);
+            if (dia2 < 1 || dia2 > 31) {
+                System.out.println("Dia no valido, recuerde que este mes tiene del 1 al 31");
+                PantallaReserva pantallaReserva = new PantallaReserva();
+                pantallaReserva.reservar();
+            }
+
+            //CON ESTO SACAMO EL MES DE SALIDA
+            String mes2_1 = String.valueOf(fecha2.charAt(3));
+            String mes2_2 = String.valueOf(fecha2.charAt(4));
+            String mes2_junto = mes2_1 + mes2_2;
+            int mes2 = Integer.parseInt(mes2_junto);
+            if (mes2 < 1 || mes2 > 12){
+                System.out.println("Mes no valido, recuerde que los meses van del 1 al 12");
+                PantallaReserva pantallaReserva = new PantallaReserva();
+                pantallaReserva.reservar();
+            }
+
+            //CON ESTO SACAMO EL AÑO DE SALIDA
+            String any2_1 = String.valueOf(fecha2.charAt(6));
+            String any2_2 = String.valueOf(fecha2.charAt(7));
+            String any2_3 = String.valueOf(fecha2.charAt(8));
+            String any2_4 = String.valueOf(fecha2.charAt(9));
+            String any2_junto = any2_1 + any2_2 + any2_3 + any2_4;
+            int any2 = Integer.parseInt(any2_junto);
+
+            //CALCULO DE NOCHES EN TOTAL.
+
+        if(any1==any2 && mes1==mes2){
+            int totalDias = dia2 - dia1 - 1;
+            return totalDias;
+        }else if (any1==any2) {
+            if (dia1 > dia2){
+                int totalDias = mes2 - mes1 + (dia1 - dia2) ;
+                return totalDias;
+            }else if (dia1 < dia2) {
+            int totalDias = mes2 - mes1 + (dia2 - dia1);
+            return totalDias;
+
+            }
+
+        }
+
+            return  1;
+    }
 
 
 }

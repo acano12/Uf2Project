@@ -1,11 +1,10 @@
 package com.company.view;
 
 import java.util.Scanner;
-import com.company.view.PantallaHabitacionIndividual;
 
 public class PantallaHabitacion {
 
-    public void habitaciones(){
+    public void habitaciones(int totalDias){
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("\033[104;97mPENSIÓN SAN JUSTO :: Habitaciones\033[0m");
@@ -18,12 +17,11 @@ public class PantallaHabitacion {
 
         if("a".equals(elegir)){
         PantallaHabitacionIndividual pantallaHabitacionIndividual = new PantallaHabitacionIndividual();
-            pantallaHabitacionIndividual.elegir();
-
+            pantallaHabitacionIndividual.elegir(totalDias);
         } else if("b".equals(elegir)){
-
+        PantallaHabitacionDoble pantallaHabitacionDoble = new PantallaHabitacionDoble();
         } else if("c".equals(elegir)){
-
+            PantallaSuite pantallaSuite = new PantallaSuite();
         }else if ("d".equals(elegir)){
             System.out.println("HASTA LUEGO");
             System.exit(0);
