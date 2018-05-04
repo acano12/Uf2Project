@@ -33,12 +33,13 @@ public class ManagerClientes {
 
 
 
-        static public String signIn (String nombre, String pass){
+        static public String signIn(String usuario, String nombre, String pass){
             for (int i = 0; i < clientes.length; i++) {
                 if (clientes[i] != null && nombre.equals(clientes[i].username) && pass.equals(clientes[i].password)) {
                     clientId = clientes[i].id;
 
                     return "ok";
+
                 }
             }
             return "nok";

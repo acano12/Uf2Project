@@ -15,6 +15,7 @@ public class PantallaHabitacionIndividual {
 
         if("a".equals(tipo)){
             System.out.println("El precio de la Habitación será: 30€/noche");
+            System.exit(0);
 
         } else if("b".equals(tipo)){
             System.out.println("El precio de la Habitación será: 50€/noche");

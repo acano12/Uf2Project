@@ -56,11 +56,13 @@ public class ManagerReserva {
                 esValido = false;
                 PantallaReserva pantallaReserva = new PantallaReserva();
                 pantallaReserva.reservar();
+                break;
             } else if (fecha2.charAt(2) != '/' || fecha2.charAt(5) != '/') {
                 System.out.println("Separador no valido");
                 esValido = false;
                 PantallaReserva pantallaReserva = new PantallaReserva();
                 pantallaReserva.reservar();
+                break;
             } else for (int i = 0; i < fecha2.length(); i++) {
                 if (i == 2) {
                     i++;
@@ -76,6 +78,7 @@ public class ManagerReserva {
                     break;
                 } else {
                     esValido = true;
+                    break;
                 }
             }
         }
@@ -280,6 +283,7 @@ public class ManagerReserva {
                 pantallaReserva.reservar();
             }
             else esValido= true;
+        break;
             }
 
 

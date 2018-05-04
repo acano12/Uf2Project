@@ -2,6 +2,7 @@ package com.company.view;
 
 import com.company.manager.ManagerClientes;
 import com.company.manager.ManagerReserva;
+import com.company.model.Cliente;
 
 import java.util.Scanner;
 
@@ -17,8 +18,7 @@ public class PantallaAcceder {
         System.out.println("Password:");
         String password = scanner.nextLine();
 
-
-        String resultado = ManagerClientes.signIn(usuario, password);
+        String resultado = ManagerClientes.signIn(usuario, password, password);
 
         if(resultado.equals("ok")){
             PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();

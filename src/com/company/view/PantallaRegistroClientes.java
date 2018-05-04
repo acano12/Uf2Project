@@ -21,10 +21,6 @@ public class PantallaRegistroClientes {
         String username = editText.read("NOMBRE DE USUARIO");
         String password = editText.read("CONTRASEÑA:");
 
-        System.out.println("FECHA DE NACIMIENTO");
-        System.out.println("----------------------");
-
-
         ManagerClientes.crearCliente(username, password);
 
         PantallaMenuPrincipal pantallaMenuPrincipal = new PantallaMenuPrincipal();
