@@ -7,7 +7,6 @@ import java.time.ZoneId;
 public class Cliente {
     LocalDateTime ldt = LocalDateTime.ofInstant(Instant.now(), ZoneId.systemDefault());
 
-    public String id;
 
     public String username;
     public String password;

@@ -182,14 +182,14 @@ public class ManagerReserva {
         int dia1 = Integer.parseInt(dia1_junto);
 
 
-        //CON ESTO SACAMO EL MES DE ENTRADA
+        //CON ESTO SACAMOS EL MES DE ENTRADA
         String mes1_1 = String.valueOf(fecha1.charAt(3));
         String mes1_2 = String.valueOf(fecha1.charAt(4));
         String mes1_junto = mes1_1 + mes1_2;
         int mes1 = Integer.parseInt(mes1_junto);
 
 
-        //CON ESTO SACAMO EL AÑO DE ENTRADA
+        //CON ESTO SACAMOS EL AÑO DE ENTRADA
         String any1_1 = String.valueOf(fecha1.charAt(6));
         String any1_2 = String.valueOf(fecha1.charAt(7));
         String any1_3 = String.valueOf(fecha1.charAt(8));
@@ -209,7 +209,7 @@ public class ManagerReserva {
             pantallaReserva.reservar();
         }
 
-        //CON ESTO SACAMO EL MES DE SALIDA
+        //CON ESTO SACAMOS EL MES DE SALIDA
         String mes2_1 = String.valueOf(fecha2.charAt(3));
         String mes2_2 = String.valueOf(fecha2.charAt(4));
         String mes2_junto = mes2_1 + mes2_2;
@@ -220,7 +220,7 @@ public class ManagerReserva {
             pantallaReserva.reservar();
         }
 
-        //CON ESTO SACAMO EL AÑO DE SALIDA
+        //CON ESTO SACAMOS EL AÑO DE SALIDA
         String any2_1 = String.valueOf(fecha2.charAt(6));
         String any2_2 = String.valueOf(fecha2.charAt(7));
         String any2_3 = String.valueOf(fecha2.charAt(8));
